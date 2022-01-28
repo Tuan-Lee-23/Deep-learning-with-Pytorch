@@ -1,0 +1,27 @@
+ # train setup
+lr: 1e-7
+max_lr: 5e-4
+num_epochs: 100
+num_layers: 6
+ratio_print_per_epoch: 0.1
+ratio_validate_per_epoch: 0.3
+train_size: 0.7
+val_size: 0.1
+vocab_min_frequency: 2
+
+# PATH
+CHECKPOINT_PATH: checkpoint/my_checkpoint.pth.tar
+DATASET_PATH: data/dataset.csv
+TRAIN_PATH: data/train.csv
+VAL_PATH: data/val.csv
+TEST_PATH: data/test.csv
+
+ # model
+max_seq_len: 100
+FFN_dimension: 1024
+batch_size: 32
+d_model: 512
+heads: 8
+load_model: False
+save_model: True
+dropout: 0.1
